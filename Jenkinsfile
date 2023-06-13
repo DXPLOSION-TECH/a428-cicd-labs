@@ -1,17 +1,15 @@
 node {
-    agent {
-        docker {
-            image 'node:16-buster-slim'
-            args '-p 3000:3000'
-        }
+    stage('Install')
+    {
+        sh 'npm install'    
     }
-    stage('Build') {
-                  sh 'npm install'
-   }
-      
-   stage('Test') { 
-                 sh './jenkins/scripts/test.sh' 
-          
-   }
+    stage('Build') 
+    {
+        sh 'npm build'
+    }
+    stage('Test')
+    { 
+        sh './jenkins/scripts/test.sh' 
+    }
    
 }
