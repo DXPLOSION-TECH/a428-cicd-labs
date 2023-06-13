@@ -3,7 +3,7 @@ node {
     stage('Build') 
     {
         sh 'npm cache clean --force'
-        sh 'npm install'
+        sh 'npm build'
     }
     stage('Test')
     { 
