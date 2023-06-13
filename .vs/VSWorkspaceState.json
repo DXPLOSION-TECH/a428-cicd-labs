@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src"
   ],
-  "SelectedNode": "\\Jenkinsfile",
+  "SelectedNode": "\\src\\registerServiceWorker.js",
   "PreviewInSolutionExplorer": false
 }
