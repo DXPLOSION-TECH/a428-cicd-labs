@@ -7,7 +7,7 @@ node {
     }
     stage('Test')
     { 
-        sh '$(WORKSPACE)/jenkins/scripts/test.sh' 
+        sh './jenkins/scripts/test.sh' 
     }
    }
 }
