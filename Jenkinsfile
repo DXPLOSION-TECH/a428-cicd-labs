@@ -3,7 +3,7 @@ node {
     stage('Build') 
     {
         
-        sh 'npm build'
+        sh 'npm install'
     }
     stage('Test')
     { 
